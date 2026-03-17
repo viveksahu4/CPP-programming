@@ -1,15 +1,7 @@
 #include<bits/stdc++.h>
+#include "first.cpp"
 using namespace std;
-class Hero{ // here to create class that name is Hero
 
-    // this lines consider some properties 
-    int helath;
-
-
-
-
-
-};
 int main(){
     // here to create obj 
     Hero h1;
