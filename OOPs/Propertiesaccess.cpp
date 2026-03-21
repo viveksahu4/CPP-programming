@@ -9,10 +9,9 @@ class Hero{
     public:
     //proeprties 
     int health;
-    private:
     char level;
     
-    void printm(){
+    void print(){
         cout<<level<<endl;
     }
 };
@@ -20,7 +19,10 @@ class Hero{
 
 int main(){
     Hero vivek;
+    vivek.health = 80;
+    vivek.level = 'A';
+
     cout<<vivek.health<<endl;
-    // cout<<vivek.level<<endl;
+    cout<<vivek.level<<endl;
     return 0 ;
 }
