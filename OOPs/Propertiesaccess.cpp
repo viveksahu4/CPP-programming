@@ -26,7 +26,8 @@ class Hero{
     }
 
     void setHealth(int h){ //setter
-        health = h;
+    health = h;
+        
     }
 
     void setLevel(char ch){ //setter
@@ -43,7 +44,7 @@ int main(){
     //vivek.health = 80;
     vivek.setHealth(90);
     vivek.level = 'A';
-
+    cout<<sizeof(vivek)<<endl;
     cout<<vivek.getHealth()<<endl;
     cout<<vivek.level<<endl;
     return 0 ;
