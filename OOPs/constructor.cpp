@@ -16,8 +16,10 @@ class Hero{
     Hero(){
         cout<<"constructor called "<<endl;
     }
-    Hero(int health){
+    Hero(int health, char level){
+
         cout<<"this->"<<this << endl;
+        this->level = level;
         this->health = health;
     }
     
@@ -47,14 +49,15 @@ class Hero{
 int main(){
     cout<<"hi"<<endl;
     //obj create statically  
-    Hero vivek(10); // behind the scene jab obj create krte h jab ek cheez call hoti h jisko hmm bolte h Constructor aur ha iska koe return type nhi hota 
+    Hero vivek(10,'c'); // behind the scene jab obj create krte h jab ek cheez call hoti h jisko hmm bolte h Constructor aur ha iska koe return type nhi hota 
     cout<<"Address of vivek"<<&vivek<<endl;
 
     cout<<"hello"<<endl;
 
     
     //this is dynamically create obj.
-    Hero *h = new Hero;
-
+    Hero *h = new Hero(10,'b');
+    Hero temp(10,'A');
+temp.print();
     return 0 ;
 }
