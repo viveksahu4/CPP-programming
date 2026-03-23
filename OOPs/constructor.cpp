@@ -16,6 +16,10 @@ class Hero{
     Hero(){
         cout<<"constructor called "<<endl;
     }
+    Hero(int health){
+        cout<<"this->"<<this << endl;
+        this->health = health;
+    }
     
     void print(){
         cout<<level<<endl;
@@ -43,7 +47,9 @@ class Hero{
 int main(){
     cout<<"hi"<<endl;
     //obj create statically  
-    Hero vivek; // behind the scene jab obj create krte h jab ek cheez call hoti h jisko hmm bolte h Constructor aur ha iska koe return type nhi hota 
+    Hero vivek(10); // behind the scene jab obj create krte h jab ek cheez call hoti h jisko hmm bolte h Constructor aur ha iska koe return type nhi hota 
+    cout<<"Address of vivek"<<&vivek<<endl;
+
     cout<<"hello"<<endl;
 
     
